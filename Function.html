@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <input type="number" id="txtFirst"/>
+        <input type="number" id="txtSecond"/>
+        <input type="button" onclick="Sum()" value="Calculate"/>
+        <label id="lblresult">
+
+        </label>
+        <br>
+        <button type="button" onclick="check(5,5)">Check</button>
+    </div>
+    <script>
+        function check(f,s){
+            debugger;
+            if(f===s)
+            {
+                console.log("Same value & same type")
+            }
+            else
+            {
+                console.log("Same value but different type")
+            }
+        }
+       
+        
+function Sum(){
+    let fNumber = document.getElementById("txtFirst").value;
+    let sNumber = document.getElementById("txtSecond").value;
+    console.log(typeof(fNumber))
+    let result=Number(fNumber)+Number( sNumber);
+    document.getElementById("lblresult").innerText=result
+}
+let f=5;
+let s="5";
+ check(f,s)
+    </script>
+</body>
+</html>

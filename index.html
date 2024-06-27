@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+   
+</head>
+<body>
+   <p id="main">
+
+   </p>
+   <input type="text" id="txtinput" value="Tasnim">
+   <button  id="btnset" onclick="Set()">Set</button>
+   <script>
+        document.getElementById("main").innerHTML="Welcome to Javascript";
+        console.log(document.getElementById("main").innerHTML)
+        
+        function Set(){
+            alert("Clicked")
+ document.getElementById("txtinput").value="Good by";
+        }
+   </script>
+</body>
+</html>
